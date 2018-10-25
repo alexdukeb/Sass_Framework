@@ -1,0 +1,129 @@
+@import 'alert';
+@import 'button';
+@import 'nav';
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.cefini{
+    @include alert_type('danger');
+}
+
+.message-info {
+    @include alert_type('info');
+}
+
+.alert-success{
+    @include alert_type('success');
+}
+
+.attention {
+    @include alert_type('warning');
+}
+
+.btn {
+    @extend %button;
+}
+
+.btn_small {
+    @include button_size_type('small');
+}
+
+.btn_medium {
+    @include button_size_type('medium');
+}
+
+.btn_large {
+    @include button_size_type('large');
+}
+
+.btn_block {
+    @include button_size_type('block');
+}
+
+.btn-primary {
+    @include button_type('classic','primary');
+}
+
+.btn-secondary {
+    @include button_type('classic','secondary');
+}
+
+.btn-success {
+    @include button_type('classic','sucess');
+}
+
+.btn-outline-success {
+    @include button_type('outline','success');
+}
+
+.btn-outline-warning {
+    @include button_type('outline','warning');
+}
+
+.btn-outline-primary {
+    @include button_type('outline','primary');
+}
+
+.btn-outline-secondary {
+    @include button_type('outline','secondary');
+}
+
+.btn-flat-dark {
+    @include button_type('flat','dark');
+}
+
+.nav {
+    @include nav();
+}
+
+.mobile-flex-column {
+    @include flex-responsive-nav(column, 'mobile', center);
+}
+
+.mobile-flex-row-center {
+    @include flex-responsive-nav(row, 'mobile', space-between);
+}
+
+.mobile-flex-row-right {
+    @include flex-responsive-nav(row, 'mobile', space-between);
+}
+
+.mobile-flex-row-left {
+    @include flex-responsive-nav(row, 'mobile', space-between);
+}
+
+.tablet-flex-column {
+    @include flex-responsive-nav(column, 'tablet', center);
+}
+
+.tablet-flex-row-center {
+    @include flex-responsive-nav(row, 'tablet', space-around);
+}
+
+.tablet-flex-row-right {
+    @include flex-responsive-nav(row, 'tablet', right);
+}
+
+.tablet-flex-row-left {
+    @include flex-responsive-nav(row, 'tablet', left);
+}
+
+.desktop-flex-column {
+    @include flex-responsive-nav(column, 'desktop', space-between);
+}
+
+.desktop-flex-row-right {
+    @include flex-responsive-nav(row, 'desktop', right);
+}
+
+.desktop-flex-row-left {
+    @include flex-responsive-nav(row, 'desktop', left);
+}
+
+.desktop-flex-row-center {
+    @include flex-responsive-nav(row, 'desktop', space-between);
+}
+

@@ -1,0 +1,145 @@
+@import 'variables';
+
+ %button {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1em;
+    color: white;
+}
+
+@mixin button_size($padding_h, $padding_v, $font_size) {
+    font-size: $font_size;
+    padding-left: $padding_h;
+    padding-right: $padding_h;
+    padding-top: $padding_v;
+    padding-bottom: $padding_v;
+}
+
+
+@mixin button_size_type($size: 'medium') {
+    @if($size == 'small'){
+        @include button_size($padding_small_h, $padding_small_v, $small_font_size);
+    }
+    @if($size == 'medium'){
+        @include button_size($padding_medium_h, $padding_medium_v, $medium_font_size);
+    }
+    @if($size == 'large'){
+        @include button_size($padding_large_h, $padding_large_v, $large_font_size);
+    }
+    @if($size == 'block'){
+        width:100%;
+        font-size: $block_font_size;
+    }
+}
+
+@mixin button_type($type: 'classic', $style: 'primary'){
+    @if($type == 'classic'){
+        @include button_classic_type($style);
+    }
+    @if($type == 'flat'){
+        @include button_flat_type($style);
+    }
+    @if($type == 'outline'){
+        @include button_outline_type($style);
+    }
+}
+
+@mixin button_outline_type($type: 'primary'){
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid;
+    @if($type == 'primary'){
+        border-color: $primary_color;
+        color: $primary_color;
+        &:hover {
+            color: white;
+            background-color: $primary_color;
+          }
+    }
+    @if($type == 'secondary'){
+        border-color: $secondary_color;
+        color: $secondary_color;
+        &:hover {
+            color: white;
+            background-color: $secondary_color;
+        }    
+    }
+    @if($type == 'success'){
+        border-color: $color_green;
+        color: $color_green; 
+        &:hover {
+            color: white;
+            background-color: $color_green;
+        }
+    }
+    @if($type == 'warning'){
+        border-color: $color_yellow;
+        color: $color_yellow;
+        &:hover {
+            color: white;
+            background-color: $color_yellow;
+        }
+    }
+    @if($type == 'danger'){
+        border-color: $color_red;
+        color: $color_red;
+        &:hover {
+            color: white;
+            background-color: $color_red;
+        }
+    }
+    @if($type == 'dark'){
+        border-color: $color_black;
+        color: $color_black;
+        &:hover {
+            color: white;
+            background-color: $color_black;
+        }
+    }
+
+
+}
+
+@mixin button_classic_type($type: 'primary'){
+    @if($type == 'primary'){
+        background-color: $primary_color;
+    }
+    @if($type == 'secondary'){
+        background-color: $secondary_color;
+    }
+    @if($type == 'sucess'){
+        background-color: $secondary_color;
+    }
+    @if($type == 'warning'){
+        background-color: $color_yellow;
+    }
+    @if($type == 'danger'){
+        background-color: $color_red;
+    }
+    @if($type == 'dark'){
+        background-color: $color_black;
+    }
+}
+
+@mixin button_flat_type($type: 'primary'){
+    border-radius: 4px;
+    border: none; 
+    @if($type == 'primary'){
+        background-color: $primary_color;
+    }
+    @if($type == 'secondary'){
+        background-color: $secondary_color;
+    }
+    @if($type == 'sucess'){
+        background-color: $color_green;
+    }
+    @if($type == 'warning'){
+        background-color: $color_yellow;
+    }
+    @if($type == 'danger'){
+        background-color: $color_red;
+    }
+    @if($type == 'dark'){
+        background-color: $color_black;
+    }
+}

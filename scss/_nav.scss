@@ -1,0 +1,58 @@
+@import 'variables';
+
+@mixin nav($color : $menu-color, $background-color : $menu-bg-color) {
+    ul {
+        background-color: $background-color;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        padding: 0;
+    }
+    ul li {
+        padding: 1em 0em;
+        width: 5em;
+        border-bottom: solid 1px grey;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: $color;
+    }
+
+}
+
+@mixin flex-responsive-nav($direction, $media : 'desktop', $justify : space-around) {
+  
+    @if($media == 'desktop'){
+        @media screen and (min-width: 800px) {
+            ul {
+                flex-direction: $direction;
+                justify-content: $justify;
+            }
+        }
+    }
+    
+    @if($media == 'tablet'){
+        @media screen and (min-width: 450px) and (max-width: 800px) {
+            ul {
+                flex-direction: $direction;
+                justify-content: $justify;
+            }
+        }
+    }
+
+    @if($media == 'mobile'){
+        @media screen and (max-width: 450px) {
+            ul {
+                flex-direction: $direction;
+                justify-content: $justify;
+            }
+            @if($direction == column){
+                ul li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
