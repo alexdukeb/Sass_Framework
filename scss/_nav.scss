@@ -1,5 +1,8 @@
 @import 'variables';
 
+$menu-bg-color: darkviolet !default; 
+$menu-color: gold !default;
+
 @mixin nav($color : $menu-color, $background-color : $menu-bg-color) {
     ul {
         background-color: $background-color;

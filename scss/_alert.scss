@@ -1,5 +1,10 @@
 @import 'variables';
 
+$color_success : green !default;
+$color_warning : yellow !default;
+$color_danger: red !default;
+$color_info : grey !default;
+
 %alert {
     text-align: center;
     font-size: 1.2em;
@@ -18,15 +23,15 @@
 @mixin alert_type($type: 'info') {
     @extend %alert;
     @if($type == 'info'){
-        @include alert_color($color_grey);
+        @include alert_color($color_info);
     }
     @if($type == 'danger'){
-        @include alert_color($color_red);
+        @include alert_color($color_danger);
     }
     @if($type == 'warning'){
-        @include alert_color($color_yellow);
+        @include alert_color($color_warning);
     }
     @if($type == 'success'){
-        @include alert_color($color_green);
+        @include alert_color($color_success);
     }
 }
