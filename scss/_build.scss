@@ -23,9 +23,6 @@ body {
     @include alert_type('warning');
 }
 
-.btn {
-    @extend %button;
-}
 
 .btn_small {
     @include button_size_type('small');
@@ -52,7 +49,7 @@ body {
 }
 
 .btn-success {
-    @include button_type('classic','sucess');
+    @include button_type('classic','success');
 }
 
 .btn-outline-success {

@@ -7,7 +7,7 @@
   margin-top: 5px;
 }
 
-.btn {
+.btn-flat-dark, .btn-outline-secondary, .btn-outline-primary, .btn-outline-warning, .btn-outline-success, .btn-success, .btn-secondary, .btn-primary {
   text-align: center;
   cursor: pointer;
   margin-top: 1em;
@@ -91,6 +91,10 @@ body {
 
 .btn-secondary {
   background-color: #020063;
+}
+
+.btn-success {
+  background-color: green;
 }
 
 .btn-outline-success {

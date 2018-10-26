@@ -55,6 +55,7 @@ $btn_block_font_size: 2rem;
 }
 
 @mixin button_type($type: 'classic', $style: 'primary'){
+    @extend %button;
     @if($type == 'classic'){
         @include button_classic_type($style);
     }
