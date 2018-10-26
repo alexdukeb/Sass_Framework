@@ -238,4 +238,117 @@ body {
   }
 }
 
+.row {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: aqua;
+}
+.row > .col + .col {
+  margin-left: 1.6%;
+}
+
+.col {
+  background-color: black;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.s1 {
+  flex-basis: 6.8666666667%;
+}
+
+.offset-1 {
+  margin-left: 8.4666666667%;
+}
+
+.s2 {
+  flex-basis: 15.3333333333%;
+}
+
+.offset-2 {
+  margin-left: 16.9333333333%;
+}
+
+.s3 {
+  flex-basis: 23.8%;
+}
+
+.offset-3 {
+  margin-left: 25.4%;
+}
+
+.s4 {
+  flex-basis: 32.2666666667%;
+}
+
+.offset-4 {
+  margin-left: 33.8666666667%;
+}
+
+.s5 {
+  flex-basis: 40.7333333333%;
+}
+
+.offset-5 {
+  margin-left: 42.3333333333%;
+}
+
+.s6 {
+  flex-basis: 49.2%;
+}
+
+.offset-6 {
+  margin-left: 50.8%;
+}
+
+.s7 {
+  flex-basis: 57.6666666667%;
+}
+
+.offset-7 {
+  margin-left: 59.2666666667%;
+}
+
+.s8 {
+  flex-basis: 66.1333333333%;
+}
+
+.offset-8 {
+  margin-left: 67.7333333333%;
+}
+
+.s9 {
+  flex-basis: 74.6%;
+}
+
+.offset-9 {
+  margin-left: 76.2%;
+}
+
+.s10 {
+  flex-basis: 83.0666666667%;
+}
+
+.offset-10 {
+  margin-left: 84.6666666667%;
+}
+
+.s11 {
+  flex-basis: 91.5333333333%;
+}
+
+.offset-11 {
+  margin-left: 93.1333333333%;
+}
+
+.s12 {
+  flex-basis: 100%;
+}
+
+.offset-12 {
+  margin-left: 101.6%;
+}
+
 /*# sourceMappingURL=TD7.2.css.map */

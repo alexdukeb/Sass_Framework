@@ -1,6 +1,7 @@
 @import 'alert';
 @import 'button';
 @import 'nav';
+@import 'grid';
 
 body {
     padding: 0;
@@ -127,3 +128,21 @@ body {
     @include flex-responsive-nav(row, 'desktop', space-between);
 }
 
+.row{
+    @include rowContainer();
+}
+
+.col{
+    @include col();
+}
+
+@for $i from 1 through $nbCol{
+    .s#{$i}{
+        @include colrow($i,$nbCol);
+    }
+
+    .offset-#{$i}{
+        @include offset($i,$nbCol)
+    }
+
+}

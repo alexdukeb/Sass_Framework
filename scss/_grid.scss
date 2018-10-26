@@ -1,0 +1,30 @@
+@import "variables";
+
+$gutter : 1.6%!default;
+
+
+@mixin rowContainer() {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aqua;
+
+    &>.col+.col{
+        margin-left : $gutter;
+    }
+}
+
+@mixin col() {
+    background-color: black;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+@mixin colrow($nbColRow,$nbCol){
+    flex-basis: (((100% - (($nbCol - 1)*$gutter))/$nbCol) * $nbColRow)+($nbColRow - 1)* $gutter ;
+}
+
+@mixin offset($nbColRow,$nbCol){
+    margin-left : (((100% - (($nbCol - 1)*$gutter))/$nbCol) * $nbColRow)+($nbColRow* $gutter) ;
+}
