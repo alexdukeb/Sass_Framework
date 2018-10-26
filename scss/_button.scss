@@ -129,14 +129,14 @@ $btn_block_font_size: 2rem;
     @if($type == 'secondary'){
         background-color: $secondary_color;
     }
-    @if($type == 'sucess'){
-        background-color: $secondary_color;
+    @if($type == 'success'){
+        background-color: $color_success;
     }
     @if($type == 'warning'){
-        background-color: $color_yellow;
+        background-color: $color_warning;
     }
     @if($type == 'danger'){
-        background-color: $color_red;
+        background-color: $color_danger;
     }
     @if($type == 'dark'){
         background-color: $color_black;
@@ -153,13 +153,13 @@ $btn_block_font_size: 2rem;
         background-color: $secondary_color;
     }
     @if($type == 'sucess'){
-        background-color: $color_green;
+        background-color: $color_success;
     }
     @if($type == 'warning'){
-        background-color: $color_yellow;
+        background-color: $color_warning;
     }
     @if($type == 'danger'){
-        background-color: $color_red;
+        background-color: $color_danger;
     }
     @if($type == 'dark'){
         background-color: $color_black;
