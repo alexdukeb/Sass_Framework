@@ -76,7 +76,7 @@ body {
 }
 
 .nav {
-    @include nav();
+    @extend %nav;
 }
 
 .mobile-flex-column {

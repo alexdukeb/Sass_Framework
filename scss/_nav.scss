@@ -3,25 +3,25 @@
 $menu-bg-color: darkviolet !default; 
 $menu-color: gold !default;
 
-@mixin nav($color : $menu-color, $background-color : $menu-bg-color) {
+%nav {
     ul {
-        background-color: $background-color;
+        background-color: $menu-bg-color;
         list-style: none;
         display: flex;
         text-align: center;
         padding: 0;
-    }
-    ul li {
+    
+        & li {
         padding: 1em 0em;
         width: 5em;
         border-bottom: solid 1px grey;
+        
+            & a {
+                text-decoration: none;
+                color: $menu-color;
+            }
+        }
     }
-
-    ul li a {
-        text-decoration: none;
-        color: $color;
-    }
-
 }
 
 @mixin flex-responsive-nav($direction, $media : 'desktop', $justify : space-around) {
