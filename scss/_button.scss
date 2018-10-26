@@ -1,4 +1,24 @@
-@import 'variables';
+$color_success : green !default;
+$color_warning : yellow !default;
+$color_danger: red !default;
+$color_info : grey !default;
+$color_black: lighten(black, 15%) !default;
+
+$primary_color: #007bff !default;
+$secondary_color: rgb(2, 0, 99) !default;
+
+$btn_padding_small_h: 8px !default;
+$btn_padding_medium_h: 12px !default;
+$btn_padding_large_h: 18px !default;
+
+$btn_padding_small_v: 2px !default;
+$btn_padding_medium_v: 6px !default;
+$btn_padding_large_v: 9px !default;
+
+$btn_small_font_size: 0.875rem;
+$btn_medium_font_size: 1rem;
+$btn_large_font_size: 1.25rem;
+$btn_block_font_size: 2rem;
 
  %button {
     text-align: center;
@@ -18,21 +38,22 @@
 
 @mixin button_size_type($size: 'medium') {
     @if($size == 'small'){
-        @include button_size($padding_small_h, $padding_small_v, $small_font_size);
+        @include button_size($btn_padding_small_h, $btn_padding_small_v, $btn_small_font_size);
     }
     @if($size == 'medium'){
-        @include button_size($padding_medium_h, $padding_medium_v, $medium_font_size);
+        @include button_size($btn_padding_medium_h, $btn_padding_medium_v, $btn_medium_font_size);
     }
     @if($size == 'large'){
-        @include button_size($padding_large_h, $padding_large_v, $large_font_size);
+        @include button_size($btn_padding_large_h, $btn_padding_large_v, $btn_large_font_size);
     }
     @if($size == 'block'){
         width:100%;
-        font-size: $block_font_size;
+        font-size: $btn_block_font_size;
     }
 }
 
 @mixin button_type($type: 'classic', $style: 'primary'){
+    @extend %button;
     @if($type == 'classic'){
         @include button_classic_type($style);
     }
@@ -65,27 +86,27 @@
         }    
     }
     @if($type == 'success'){
-        border-color: $color_green;
-        color: $color_green; 
+        border-color: $color_success;
+        color: $color_success; 
         &:hover {
             color: white;
-            background-color: $color_green;
+            background-color: $color_success;
         }
     }
     @if($type == 'warning'){
-        border-color: $color_yellow;
-        color: $color_yellow;
+        border-color: $color_warning;
+        color: $color_warning;
         &:hover {
             color: white;
-            background-color: $color_yellow;
+            background-color: $color_warning;
         }
     }
     @if($type == 'danger'){
-        border-color: $color_red;
-        color: $color_red;
+        border-color: $color_danger;
+        color: $color_danger;
         &:hover {
             color: white;
-            background-color: $color_red;
+            background-color: $color_danger;
         }
     }
     @if($type == 'dark'){
@@ -107,14 +128,14 @@
     @if($type == 'secondary'){
         background-color: $secondary_color;
     }
-    @if($type == 'sucess'){
-        background-color: $secondary_color;
+    @if($type == 'success'){
+        background-color: $color_success;
     }
     @if($type == 'warning'){
-        background-color: $color_yellow;
+        background-color: $color_warning;
     }
     @if($type == 'danger'){
-        background-color: $color_red;
+        background-color: $color_danger;
     }
     @if($type == 'dark'){
         background-color: $color_black;
@@ -131,13 +152,13 @@
         background-color: $secondary_color;
     }
     @if($type == 'sucess'){
-        background-color: $color_green;
+        background-color: $color_success;
     }
     @if($type == 'warning'){
-        background-color: $color_yellow;
+        background-color: $color_warning;
     }
     @if($type == 'danger'){
-        background-color: $color_red;
+        background-color: $color_danger;
     }
     @if($type == 'dark'){
         background-color: $color_black;

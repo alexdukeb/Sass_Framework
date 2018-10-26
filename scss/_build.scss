@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 @import 'alert';
 @import 'button';
 @import 'nav';
 @import 'grid';
 
+=======
+>>>>>>> 5a8c91bed639980cb8258c5ca3919d9f51cd86f7
 body {
     padding: 0;
     margin: 0;
@@ -24,9 +27,6 @@ body {
     @include alert_type('warning');
 }
 
-.btn {
-    @extend %button;
-}
 
 .btn_small {
     @include button_size_type('small');
@@ -53,7 +53,7 @@ body {
 }
 
 .btn-success {
-    @include button_type('classic','sucess');
+    @include button_type('classic','success');
 }
 
 .btn-outline-success {
@@ -77,7 +77,7 @@ body {
 }
 
 .nav {
-    @include nav();
+    @extend %nav;
 }
 
 .mobile-flex-column {
