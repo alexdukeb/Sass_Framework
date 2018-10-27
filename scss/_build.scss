@@ -77,15 +77,15 @@ body {
 }
 
 .mobile-flex-row-center {
-    @include flex-responsive-nav(row, 'mobile', space-between);
+    @include flex-responsive-nav(row, 'mobile', space-around);
 }
 
 .mobile-flex-row-right {
-    @include flex-responsive-nav(row, 'mobile', space-between);
+    @include flex-responsive-nav(row, 'mobile', right);
 }
 
 .mobile-flex-row-left {
-    @include flex-responsive-nav(row, 'mobile', space-between);
+    @include flex-responsive-nav(row, 'mobile', left);
 }
 
 .tablet-flex-column {
@@ -105,7 +105,7 @@ body {
 }
 
 .desktop-flex-column {
-    @include flex-responsive-nav(column, 'desktop', space-between);
+    @include flex-responsive-nav(column, 'desktop', center);
 }
 
 .desktop-flex-row-right {
@@ -117,7 +117,7 @@ body {
 }
 
 .desktop-flex-row-center {
-    @include flex-responsive-nav(row, 'desktop', space-between);
+    @include flex-responsive-nav(row, 'desktop', space-around);
 }
 
 .row{

@@ -164,21 +164,21 @@ body {
 @media screen and (max-width: 450px) {
   .mobile-flex-row-center ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 @media screen and (max-width: 450px) {
   .mobile-flex-row-right ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
   }
 }
 
 @media screen and (max-width: 450px) {
   .mobile-flex-row-left ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
   }
 }
 
@@ -213,7 +213,7 @@ body {
 @media screen and (min-width: 800px) {
   .desktop-flex-column ul {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -234,7 +234,7 @@ body {
 @media screen and (min-width: 800px) {
   .desktop-flex-row-center ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
