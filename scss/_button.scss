@@ -15,10 +15,10 @@ $btn_padding_small_v: 2px !default;
 $btn_padding_medium_v: 6px !default;
 $btn_padding_large_v: 9px !default;
 
-$btn_small_font_size: 0.875rem;
-$btn_medium_font_size: 1rem;
-$btn_large_font_size: 1.25rem;
-$btn_block_font_size: 2rem;
+$btn_small_font_size: 0.875rem !default;
+$btn_medium_font_size: 1rem !default;
+$btn_large_font_size: 1.25rem !default;
+$btn_block_font_size: 2rem !default;
 
  %button {
     text-align: center;

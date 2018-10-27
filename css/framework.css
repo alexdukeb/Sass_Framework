@@ -1,8 +1,31 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
 }
 
+/* Nouvelles variables */
+/*-- A dé-commenter pour appliquer le deuxième style --*/
+/*
+$color_info : blue;
+
+$primary_color:  darkviolet !default; 
+$secondary_color: gold !default;
+
+$btn_padding_small_h: 12px;
+$btn_padding_small_v: 6px;
+
+$btn_padding_medium_h: 24px;
+$btn_padding_medium_v: 12px;
+
+$btn_padding_large_h: 48px;
+$btn_padding_large_v: 24px;
+
+$btn_small_font_size: 1rem;
+$btn_medium_font_size: 1.5rem;
+$btn_large_font_size: 2rem;
+$btn_block_font_size: 3rem;
+*/
 .alert_warning, .alert-success, .alert-info, .alert_danger {
   text-align: center;
   font-size: 1.2em;
@@ -14,7 +37,7 @@ body {
 }
 
 .nav ul {
-  background-color: darkviolet;
+  background-color: #007bff;
   list-style: none;
   display: flex;
   text-align: center;
@@ -26,11 +49,11 @@ body {
   width: 100%;
 }
 .nav ul li:hover {
-  background-color: #7000a0;
+  background-color: #0062cc;
 }
 .nav ul li a {
   text-decoration: none;
-  color: gold;
+  color: #020063;
   font-size: 1.5rem;
   font-family: Arial;
 }
@@ -99,11 +122,11 @@ body {
 
 /* Style boutons */
 .btn-primary {
-  background-color: darkviolet;
+  background-color: #007bff;
 }
 
 .btn-secondary {
-  background-color: gold;
+  background-color: #020063;
 }
 
 .btn-success {
@@ -162,24 +185,24 @@ body {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid;
-  border-color: darkviolet;
-  color: darkviolet;
+  border-color: #007bff;
+  color: #007bff;
 }
 .btn-outline-primary:hover {
   color: white;
-  background-color: darkviolet;
+  background-color: #007bff;
 }
 
 .btn-outline-secondary {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid;
-  border-color: gold;
-  color: gold;
+  border-color: #020063;
+  color: #020063;
 }
 .btn-outline-secondary:hover {
   color: white;
-  background-color: gold;
+  background-color: #020063;
 }
 
 .btn-outline-success {
@@ -203,13 +226,13 @@ body {
 .btn-flat-primary {
   border-radius: 4px;
   border: none;
-  background-color: darkviolet;
+  background-color: #007bff;
 }
 
 .btn-flat-secondary {
   border-radius: 4px;
   border: none;
-  background-color: gold;
+  background-color: #020063;
 }
 
 .btn-flat-success {
