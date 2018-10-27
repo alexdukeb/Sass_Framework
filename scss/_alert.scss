@@ -6,15 +6,17 @@ $color_info : grey !default;
 %alert {
     text-align: center;
     font-size: 1.2em;
-    border-radius: 10px;
-    width: 50vw;
+    width: 70vw;
     padding: 5px;
-    margin-top: 5px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    align-content: center;
 }
 
 @mixin alert_color($color) {
     background-color : lighten($color, 10%);
     color: darken($color, 20%);
+    border: solid 2px darken($color, 20%);
 }
 
 @mixin alert_type($type: 'info') {
