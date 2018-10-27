@@ -5,12 +5,34 @@ body {
 }
 
 /* Nouvelles variables */
-/*-- A dé-commenter pour appliquer le deuxième style --*/
+/*A dé-commenter pour appliquer*/
+/* Deuxième style --*/
 /*
 $color_info : blue;
 
-$primary_color:  darkviolet !default; 
-$secondary_color: gold !default;
+$primary_color:  darkviolet;
+$secondary_color: gold;
+
+$btn_padding_small_h: 12px;
+$btn_padding_small_v: 6px;
+
+$btn_padding_medium_h: 24px;
+$btn_padding_medium_v: 12px;
+
+$btn_padding_large_h: 48px;
+$btn_padding_large_v: 24px;
+
+$btn_small_font_size: 1rem;
+$btn_medium_font_size: 1.5rem;
+$btn_large_font_size: 2rem;
+$btn_block_font_size: 3rem;
+*/
+/*-- Troisième style --*/
+/*
+$color_info : peachpuff;
+
+$primary_color:  rgb(50, 50, 50); 
+$secondary_color: orange;
 
 $btn_padding_small_h: 12px;
 $btn_padding_small_v: 6px;
