@@ -1,4 +1,4 @@
-.attention, .alert-success, .message-info, .cefini {
+.alert_warning, .alert-success, .alert-info, .alert_danger {
   text-align: center;
   font-size: 1.2em;
   width: 70vw;
@@ -6,13 +6,6 @@
   margin: 5px auto;
   box-sizing: border-box;
   align-content: center;
-}
-
-.btn-flat-dark, .btn-outline-secondary, .btn-outline-primary, .btn-outline-warning, .btn-outline-success, .btn-success, .btn-secondary, .btn-primary {
-  text-align: center;
-  cursor: pointer;
-  margin-top: 1em;
-  color: white;
 }
 
 .nav ul {
@@ -37,21 +30,29 @@
   font-family: Arial;
 }
 
+.btn-flat-danger, .btn-flat-warning, .btn-flat-success, .btn-flat-secondary, .btn-flat-primary, .btn-flat-dark, .btn-outline-secondary, .btn-outline-primary, .btn-outline-danger, .btn-outline-warning, .btn-outline-success, .btn-dark, .btn-danger, .btn-warning, .btn-success, .btn-secondary, .btn-primary {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1em;
+  color: white;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
 
-.cefini {
+/* Alertes */
+.alert_danger {
   background-color: #ff3333;
   color: #990000;
   border: solid 2px #990000;
 }
 
-.message-info {
-  background-color: #3333ff;
-  color: #000099;
-  border: solid 2px #000099;
+.alert-info {
+  background-color: #9a9a9a;
+  color: #4d4d4d;
+  border: solid 2px #4d4d4d;
 }
 
 .alert-success {
@@ -60,12 +61,13 @@ body {
   border: solid 2px #001a00;
 }
 
-.attention {
+.alert_warning {
   background-color: #ffff33;
   color: #999900;
   border: solid 2px #999900;
 }
 
+/* Taille boutons */
 .btn_small {
   font-size: 0.875rem;
   padding-left: 8px;
@@ -95,16 +97,29 @@ body {
   font-size: 2rem;
 }
 
+/* Style boutons */
 .btn-primary {
-  background-color: #007bff;
+  background-color: darkviolet;
 }
 
 .btn-secondary {
-  background-color: #020063;
+  background-color: gold;
 }
 
 .btn-success {
   background-color: green;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-dark {
+  background-color: #262626;
 }
 
 .btn-outline-success {
@@ -131,28 +146,52 @@ body {
   background-color: yellow;
 }
 
+.btn-outline-danger {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: red;
+  color: red;
+}
+.btn-outline-danger:hover {
+  color: white;
+  background-color: red;
+}
+
 .btn-outline-primary {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid;
-  border-color: #007bff;
-  color: #007bff;
+  border-color: darkviolet;
+  color: darkviolet;
 }
 .btn-outline-primary:hover {
   color: white;
-  background-color: #007bff;
+  background-color: darkviolet;
 }
 
 .btn-outline-secondary {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid;
-  border-color: #020063;
-  color: #020063;
+  border-color: gold;
+  color: gold;
 }
 .btn-outline-secondary:hover {
   color: white;
-  background-color: #020063;
+  background-color: gold;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: green;
+  color: green;
+}
+.btn-outline-success:hover {
+  color: white;
+  background-color: green;
 }
 
 .btn-flat-dark {
@@ -161,6 +200,37 @@ body {
   background-color: #262626;
 }
 
+.btn-flat-primary {
+  border-radius: 4px;
+  border: none;
+  background-color: darkviolet;
+}
+
+.btn-flat-secondary {
+  border-radius: 4px;
+  border: none;
+  background-color: gold;
+}
+
+.btn-flat-success {
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-flat-warning {
+  border-radius: 4px;
+  border: none;
+  background-color: yellow;
+}
+
+.btn-flat-danger {
+  border-radius: 4px;
+  border: none;
+  background-color: red;
+}
+
+/* Navigation */
+/* Type de navigation responsive */
 @media screen and (max-width: 450px) {
   .mobile-flex-column ul {
     flex-direction: column;
@@ -284,6 +354,7 @@ body {
   }
 }
 
+/* Grille */
 .row {
   height: 30px;
   display: flex;

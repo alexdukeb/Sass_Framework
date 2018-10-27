@@ -3,22 +3,25 @@ body {
     margin: 0;
 }
 
-.cefini{
+/* Alertes */
+
+.alert_danger {
     @include alert_type('danger');
 }
 
-.message-info {
+.alert-info {
     @include alert_type('info');
 }
 
-.alert-success{
+.alert-success {
     @include alert_type('success');
 }
 
-.attention {
+.alert_warning {
     @include alert_type('warning');
 }
 
+/* Taille boutons */
 
 .btn_small {
     @include button_size_type('small');
@@ -36,6 +39,8 @@ body {
     @include button_size_type('block');
 }
 
+/* Style boutons */
+
 .btn-primary {
     @include button_type('classic','primary');
 }
@@ -48,12 +53,28 @@ body {
     @include button_type('classic','success');
 }
 
+.btn-warning {
+    @include button_type('classic','warning');
+}
+
+.btn-danger {
+    @include button_type('classic','danger');
+}
+
+.btn-dark {
+    @include button_type('classic','dark');
+}
+
 .btn-outline-success {
     @include button_type('outline','success');
 }
 
 .btn-outline-warning {
     @include button_type('outline','warning');
+}
+
+.btn-outline-danger {
+    @include button_type('outline','danger');
 }
 
 .btn-outline-primary {
@@ -64,13 +85,41 @@ body {
     @include button_type('outline','secondary');
 }
 
+.btn-outline-success {
+    @include button_type('outline','success');
+}
+
 .btn-flat-dark {
     @include button_type('flat','dark');
 }
 
+.btn-flat-primary {
+    @include button_type('flat','primary');
+}
+
+.btn-flat-secondary {
+    @include button_type('flat','secondary');
+}
+
+.btn-flat-success {
+    @include button_type('flat','success');
+}
+
+.btn-flat-warning {
+    @include button_type('flat','warning');
+}
+
+.btn-flat-danger {
+    @include button_type('flat','danger');
+}
+
+
+/* Navigation */
 .nav {
     @extend %nav;
 }
+
+/* Type de navigation responsive */
 
 .mobile-flex-column {
     @include flex-responsive-nav(column, 'mobile', center);
@@ -120,6 +169,7 @@ body {
     @include flex-responsive-nav(row, 'desktop', space-around);
 }
 
+/* Grille */
 .row{
     @include rowContainer();
 }

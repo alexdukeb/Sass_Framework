@@ -1,5 +1,5 @@
-$menu-bg-color: darkviolet !default; 
-$menu-color: gold !default;
+$primary_color:  darkviolet !default; 
+$secondary_color: gold !default;
 
 $mobile_max_width: 450px !default;
 $tablet_max_width: 800px !default;
@@ -12,7 +12,7 @@ $menu-font: Arial !default;
 
 %nav {
     ul {
-        background-color: $menu-bg-color;
+        background-color: $primary_color;
         list-style: none;
         display: flex;
         text-align: center;
@@ -23,12 +23,12 @@ $menu-font: Arial !default;
         padding: 1em 0em;
         width: 100%;
             &:hover {
-                background-color: darken($menu-bg-color, 10%);
+                background-color: darken($primary_color, 10%);
             }
 
             & a {
                 text-decoration: none;
-                color: $menu-color;
+                color: $secondary_color;
                 font-size: $menu-font-size;
                 font-family: $menu-font;     
             }
