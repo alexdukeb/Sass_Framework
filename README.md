@@ -6,6 +6,6 @@ $ sass -- watch scss/framework.scss:css/framework.css
 
 - À ouvrir : index.html
 
-- Pour appliquer le second style :
-Décommenter le fichier scss/_variables.scss
+- Pour modifier le style par défaut et appliquer le style 2 & 3 :
+Décommenter les dans le fichier scss/_variables.scss
 
