@@ -1,8 +1,10 @@
+// Variables par défaut
 $color_success : green !default;
 $color_warning : yellow !default;
 $color_danger: red !default;
 $color_info : grey !default;
 
+// Style d'une alerte par défaut
 %alert {
     text-align: center;
     font-size: 1.2em;
@@ -13,12 +15,14 @@ $color_info : grey !default;
     align-content: center;
 }
 
+// Applique la couleur passée en parramètre à une alerte
 @mixin alert_color($color) {
     background-color : lighten($color, 10%);
     color: darken($color, 20%);
     border: solid 2px darken($color, 20%);
 }
 
+// Recoit le type d'alerte et appelle alert_color() en lui passant une couleur spécifique 
 @mixin alert_type($type: 'info') {
     @extend %alert;
     @if($type == 'info'){

@@ -1,12 +1,8 @@
-@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
 }
 
-/* Nouvelles variables */
-/*A dé-commenter pour appliquer*/
-/* Deuxième style --*/
 /*
 $color_info : blue;
 
@@ -27,7 +23,6 @@ $btn_medium_font_size: 1.5rem;
 $btn_large_font_size: 2rem;
 $btn_block_font_size: 3rem;
 */
-/*-- Troisième style --*/
 /*
 $color_info : peachpuff;
 
@@ -87,7 +82,6 @@ $btn_block_font_size: 3rem;
   color: white;
 }
 
-/* Alertes */
 .alert_danger {
   background-color: #ff3333;
   color: #990000;
@@ -112,7 +106,6 @@ $btn_block_font_size: 3rem;
   border: solid 2px #999900;
 }
 
-/* Taille boutons */
 .btn_small {
   font-size: 0.875rem;
   padding-left: 8px;
@@ -142,7 +135,6 @@ $btn_block_font_size: 3rem;
   font-size: 2rem;
 }
 
-/* Style boutons */
 .btn-primary {
   background-color: #007bff;
 }
@@ -274,8 +266,6 @@ $btn_block_font_size: 3rem;
   background-color: red;
 }
 
-/* Navigation */
-/* Type de navigation responsive */
 @media screen and (max-width: 450px) {
   .mobile-flex-column ul {
     flex-direction: column;
@@ -399,7 +389,6 @@ $btn_block_font_size: 3rem;
   }
 }
 
-/* Grille */
 .row {
   height: 30px;
   display: flex;

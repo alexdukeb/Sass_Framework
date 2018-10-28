@@ -1,3 +1,4 @@
+// Variables par défaut
 $primary_color: #007bff !default;
 $secondary_color: rgb(2, 0, 99) !default;
 
@@ -9,7 +10,7 @@ $tablet-menu-font-size: 1rem !default;
 $mobile-menu-font-size: 0.875rem !default;
 $menu-font: Arial !default;
 
-
+// Style par défaut d'une navigation en flex
 %nav {
     ul {
         background-color: $primary_color;
@@ -36,6 +37,7 @@ $menu-font: Arial !default;
     }
 }
 
+// Permet de définir spécifiquement le type de flex, la position des élément dans ce dernier, pour quel type de média ce style doit s'appliquer
 @mixin flex-responsive-nav($direction, $media : 'desktop', $justify : space-around) {
     @if($media == 'desktop'){
         @media screen and (min-width: $tablet_max_width) {

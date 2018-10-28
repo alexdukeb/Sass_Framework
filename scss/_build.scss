@@ -1,4 +1,4 @@
-/* Alertes */
+// Alertes 
 
 .alert_danger {
     @include alert_type('danger');
@@ -16,7 +16,7 @@
     @include alert_type('warning');
 }
 
-/* Taille boutons */
+// Taille boutons
 
 .btn_small {
     @include button_size_type('small');
@@ -34,7 +34,7 @@
     @include button_size_type('block');
 }
 
-/* Style boutons */
+// Style boutons
 
 .btn-primary {
     @include button_type('classic','primary');
@@ -109,12 +109,12 @@
 }
 
 
-/* Navigation */
+// Navigation
 .nav {
     @extend %nav;
 }
 
-/* Type de navigation responsive */
+// Type de navigation responsive
 
 .mobile-flex-column {
     @include flex-responsive-nav(column, 'mobile', center);
@@ -164,7 +164,7 @@
     @include flex-responsive-nav(row, 'desktop', space-around);
 }
 
-/* Grille */
+// Grille
 .row{
     @include rowContainer();
 }

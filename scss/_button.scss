@@ -1,3 +1,4 @@
+// Variables par défaut
 $color_success : green !default;
 $color_warning : yellow !default;
 $color_danger: red !default;
@@ -20,6 +21,7 @@ $btn_medium_font_size: 1rem !default;
 $btn_large_font_size: 1.25rem !default;
 $btn_block_font_size: 2rem !default;
 
+// Définit le style commun à tout les boutons
  %button {
     text-align: center;
     cursor: pointer;
@@ -27,6 +29,7 @@ $btn_block_font_size: 2rem !default;
     color: white;
 }
 
+// Applique les dimensions passé en parramètre
 @mixin button_size($padding_h, $padding_v, $font_size) {
     font-size: $font_size;
     padding-left: $padding_h;
@@ -35,7 +38,7 @@ $btn_block_font_size: 2rem !default;
     padding-bottom: $padding_v;
 }
 
-
+// Appelle button_size() avec des valeurs spécifiques selon le type de bouton
 @mixin button_size_type($size: 'medium') {
     @if($size == 'small'){
         @include button_size($btn_padding_small_h, $btn_padding_small_v, $btn_small_font_size);
@@ -52,6 +55,7 @@ $btn_block_font_size: 2rem !default;
     }
 }
 
+// Appelle la fonction appliquant le style spécifique d'un bouton, selon le type et le style passé en parramètre
 @mixin button_type($type: 'classic', $style: 'primary'){
     @extend %button;
     @if($type == 'classic'){
@@ -65,6 +69,7 @@ $btn_block_font_size: 2rem !default;
     }
 }
 
+// Définit des boutons de type outline
 @mixin button_outline_type($type: 'primary'){
     background-color: transparent;
     border-radius: 4px;
@@ -121,6 +126,7 @@ $btn_block_font_size: 2rem !default;
 
 }
 
+// Définit des boutons classiques
 @mixin button_classic_type($type: 'primary'){
     @if($type == 'primary'){
         background-color: $primary_color;
@@ -142,6 +148,7 @@ $btn_block_font_size: 2rem !default;
     }
 }
 
+// Définit des boutons type plat
 @mixin button_flat_type($type: 'primary'){
     border-radius: 4px;
     border: none; 
